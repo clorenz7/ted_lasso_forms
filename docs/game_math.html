@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game Math</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    <style>
+        /* Reset or normalize default browser styles */
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        html {
+        font-size: 16px;
+        }
+
+        body {
+        font-family: sans-serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #333;
+        max-width: 960px;
+        }
+
+        /* Simple typography styles */
+        h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+        line-height: 1.2;
+        margin: 1rem 0;
+        }
+
+        p {
+        margin: 1rem 0;
+        }
+
+        a {
+        color: #0077cc;
+        text-decoration: none;
+        transition: color 0.3s;
+        }
+
+        a:hover {
+        color: #005299;
+        }
+
+        /* Simple layout styles */
+        .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1rem;
+        }
+
+    </style>
+
+  </head>
+<body>
+
+<p>Thank you for taking part in and for being curious about my experiment in building a community oracle! </p>
+
+<p>The idea is to track and reward agents (i.e. you!) for being able to predict the future.</p>
+
+<p> The goal is two fold: to construct a highly accurate forecast of the future while also helping and incentivizing people make better predictions by reflecting their blind spots. </p>
+
+<p> From Machine Learning theory, we know that an ensemble of slightly better than random agents can be combined to form a very accurate algorithm.</p>
+
+<p> Since the universe is at its most fundamental level probability, we build the oracle to provide the most accurate probability estimates. Since it typically is best to just ask for what you want, we ask agents to directly estimate these probabilites.</p>
+
+<p> Using the priciples of information theory, we score each agent based on the amount of information an agent provides as compared to the community for the outcome of each event. This is done as follows...</p>
+
+<p> For an outcome O, given a set of N agent estimates \(P_O^a\), we can estimate the community probability \(P_O^C\) as:</p>
+
+$$ P_O^C = \frac{1}{N}\sum_{a=1}^{N}P^a_O $$
+
+<p> The information provided by an agent can then be calculated as:</p>
+
+$$ I_O^a = \log_2\left(\frac{P^a_O}{P^C_O}\right) = \log_2(P^a_O) - \log_2(P^C_O) $$
+
+<p> Essentially, this means that for the outcome that happened, if you had estimated the probability higher than the community, you get a positive score, if less, you get a negative score. This incentivizes agents to not fall prone to the errors of group think or "conventional wisdom" (since \(\log_21 = 0 \)) while not being contrarian for the sake of it. It also encourages agents to check their biases and think probabalistically as it penalizes them for being certain (i.e. \(P_O^a = 0\)) about an outcome (since \(\log_20 = -\infty\)) </p>
+
+<p> Unfortunately for the purposes of this experiment, we can never estimate the true probabilities since the universe is not a laboratory that we can run the same event over and over again. Instead, we have the agents predict multiple events \(N_E\) in order to estimate their accuracy. We achieve this by simply summing the information over multiple event outcomes \(O[e]\) to obtain the agent's score \(S^a\):</p>
+
+$$S^a = \sum_{e=1}^{N_E}I_{O[e]}^a$$
+</body>
+</html>
