@@ -81,8 +81,8 @@ $$ I_O^a = \log_2\left(\frac{P^a_O}{P^C_O}\right) = \log_2(P^a_O) - \log_2(P^C_O
 
 <p> Essentially, this means that for the outcome that happened, if you had estimated the probability higher than the community, you get a positive score, if less, you get a negative score. This incentivizes agents to not fall prone to the errors of group think or "conventional wisdom" (since \(\log_21 = 0 \)) while not being contrarian for the sake of it. It also encourages agents to check their biases and think probabalistically as it penalizes them for being certain (i.e. \(P_O^a = 0\)) about an outcome (since \(\log_20 = -\infty\)) </p>
 
-<p> Unfortunately for the purposes of this experiment, we can never estimate the true probabilities since the universe is not a laboratory that we can run the same event over and over again. Instead, we have the agents predict multiple events \(N_E\) in order to estimate their accuracy. We achieve this by simply summing the information over multiple event outcomes \(O[e]\) to obtain the agent's score \(S^a\):</p>
+<p> Unfortunately for the purposes of this experiment, we can never estimate the true probabilities since the universe is not a laboratory that we can run the same event over and over again. Instead, we have the agents predict multiple events \(N_E\) in order to estimate their accuracy. We achieve this by simply summing the information over multiple event outcomes \(O_e\) weighted by the points for the event \(P_e\) to obtain the agent's score \(S^a\):</p>
 
-$$S^a = \sum_{e=1}^{N_E}I_{O[e]}^a$$
+$$S^a = \sum_{e=1}^{N_E}P_eI_{O_e}^a$$
 </body>
 </html>
