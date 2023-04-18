@@ -1,0 +1,156 @@
+<style type="text/css">
+  .form-style-1 {
+    margin:10px auto;
+    max-width: 500px;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+  .form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+  }
+  .form-style-1 label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+  }
+  .form-style-1 input[type=text],
+  .form-style-1 input[type=date],
+  .form-style-1 input[type=datetime],
+  .form-style-1 input[type=number],
+  .form-style-1 input[type=search],
+  .form-style-1 input[type=time],
+  .form-style-1 input[type=url],
+  .form-style-1 input[type=email],
+  textarea,
+  select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+  }
+  .form-style-1 input[type=text]:focus,
+  .form-style-1 input[type=date]:focus,
+  .form-style-1 input[type=datetime]:focus,
+  .form-style-1 input[type=number]:focus,
+  .form-style-1 input[type=search]:focus,
+  .form-style-1 input[type=time]:focus,
+  .form-style-1 input[type=url]:focus,
+  .form-style-1 input[type=email]:focus,
+  .form-style-1 textarea:focus,
+  .form-style-1 select:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+  }
+  .form-style-1 .field-divided{
+    width: 49%;
+  }
+
+  .form-style-1 .field-long{
+    width: 100%;
+  }
+  .form-style-1 .field-select{
+    width: 100%;
+  }
+  .form-style-1 .field-textarea{
+    height: 100px;
+  }
+  .form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+  }
+  .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+    background: #0bb7e2;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+  }
+  .form-style-1 .required{
+    color:red;
+  }
+  </style>
+<h2> <center>All Questions Are For Episode 6 Only!</center></h2>
+<form id="fs-frm" name="basic-rsvp-form" accept-charset="utf-8" action="https://formspree.io/f/xlekaevb" method="post">
+  <ul class="form-style-1">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Full Name</label>
+    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    <label for="email">e-mail (optional)</label>
+    <input type="text" name="email" id="email" placeholder="you@you.com">
+    <h3> Please enter the probabilities (in percent) for the number of times that Roy Kent will say Fuck (2 points)</h3>
+      <label for="low_fucks"> 7 or less</label>
+        <input type="number" name="low_fucks" id="low_fucks" min=0.0 step=1 required=""></input>
+      <label for="med_fucks"> 8 to 12</label>
+        <input type="number" name="med_fucks" id="med_fucks" min=0.0 step=1 required=""></input>
+      <label for="high_fucks">13 or more</label>
+        <input type="number" name="high_fucks" id="high_fucks" min=0.0 step=1 required=""></input>
+    <h3> How many goals will Jaime score this week? (2 points)</h3>
+      <label for="jaime_0">0</label>
+        <input type="number" name="jaime_0" id="jaime_0" min=0.0 step=1 required=""></input>
+      <label for="jaime_1">1</label>
+        <input type="number" name="jaime_1" id="jaime_1" min=0.0 step=1 required=""></input>
+      <label for="jaime_2">2</label>
+        <input type="number" name="jaime_2" id="jaime_2" min=0.0 step=1 required=""></input>
+      <label for="jaime_3">3 or more</label>
+        <input type="number" name="jaime_3" id="jaime_3" min=0.0 step=1 required=""></input>
+    <h3> Please enter the probabilities for Richmond's best performance this week (2 points)</h3>
+      <label for="ted_lose"> Loss </label>
+        <input type="number" name="ted_lose" id="ted_lose" min=0.0 step=1 required=""></input>
+      <label for="ted_tie">Tie / No Game</label>
+        <input type="number" name="ted_tie" id="ted_tie" min=0.0 step=1 required=""></input>
+      <label for="ted_win">Win</label>
+        <input type="number" name="ted_win" id="ted_win" min=0.0 step=1 required=""></input>
+    <h3> In what place will Nate's team be at the end of this episode? (2 points)</h3>
+      <label for="nate_1"> First or Unmentioned</label>
+        <input type="number" name="nate_1" id=nate_1" min=0.0 step=1 required=""></input>
+      <label for="nate_2">Second</label>
+        <input type="number" name="nate_2" id="nate_2" min=0.0 step=1 required=""></input>
+      <label for="nate_3">Third</label>
+        <input type="number" name="nate_3" id="nate_3" min=0.0 step=1 required=""></input>
+      <label for="nate_4">Fourth or Lower</label>
+        <input type="number" name="nate_4" id="nate_4" min=0.0 step=1 required=""></input>
+    <h3> How will Rebecca react to the fertility news? (2 points)</h3>
+      <label for="becca_ivf"> YOLO IVF Anyways</label>
+        <input type="number" name="becca_ivf" id=becca_ivf" min=0.0 step=1 required=""></input>
+      <label for="becca_sex"> Have Sex! </label>
+        <input type="number" name="becca_sex" id="becca_sex" min=0.0 step=1 required=""></input>
+      <label for="becca_adopt"> Consider Adoption </label>
+        <input type="number" name="becca_adopt" id="becca_adopt" min=0.0 step=1 required=""></input>
+      <label for="becca_psy"> See Psychic Again </label>
+        <input type="number" name="becca_psy" id="becca_psy" min=0.0 step=1 required=""></input>
+      <label for="becca_multi"> More than 1 of the Above </label>
+        <input type="number" name="becca_multi" id="becca_multi" min=0.0 step=1 required=""></input>
+      <label for="becca_none"> None of the Above </label>
+        <input type="number" name="becca_none" id="becca_none" min=0.0 step=1 required=""></input>
+    <h3> What is the probability (in percent) that Roy finds out about Keely's new thing?</h3>
+      <input type="number" name="roy_keely" id="roy_keely" min=0.0 step=1 required=""></input>
+    <h3> What is the probability (in percent) that the Diamond Dogs help Roy with his Feelings?</h3>
+      <input type="number" name="roy_dogs" id="roy_dogs" min=0.0 step=1 required=""></input>
+    <h3> What is the probability (in percent) that Rebecca and Sam kiss?</h3>
+      <input type="number" name="becca_sam" id="becca_sam" min=0.0 step=1 required=""></input>
+    <h3> What is the probability (in percent) that Nate wrecks his fancy car?</h3>
+      <input type="number" name="nate_car" id="nate_car" min=0.0 step=1 required=""></input>
+    <h3> What is the probability (in percent) that the waitress agrees to a date with Nate?</h3>
+      <input type="number" name="nate_the_date" id="nate_the_date" min=0.0 step=1 required=""></input>
+    <h3> What is the probability that Keely's CFO gets a new snow globe?</h3>
+      <input type="number" name="snowglobe" id="snowglobe" min=0.0 step=1 required=""></input>
+    <input type="hidden" name="_subject" id="email-subject" value="TL Ep 6 Submission!"/>
+    <input name="subject" type="hidden" value="New submission from {{ full-name }}" />
+  </fieldset>
+  <input type="submit" value="Submit">
+  </ul>
+</form>
