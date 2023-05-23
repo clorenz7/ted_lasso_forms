@@ -1,0 +1,191 @@
+<style type="text/css">
+
+  .form-style-1 {
+    margin:10px auto;
+    max-width: 512px;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    float: left;
+  }
+  .form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+  }
+  .form-style-1 label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+  }
+  .form-style-1 input[type=text],
+  .form-style-1 input[type=date],
+  .form-style-1 input[type=datetime],
+  .form-style-1 input[type=number],
+  .form-style-1 input[type=search],
+  .form-style-1 input[type=time],
+  .form-style-1 input[type=url],
+  .form-style-1 input[type=email],
+  textarea,
+  select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+  }
+  .form-style-1 input[type=text]:focus,
+  .form-style-1 input[type=date]:focus,
+  .form-style-1 input[type=datetime]:focus,
+  .form-style-1 input[type=number]:focus,
+  .form-style-1 input[type=search]:focus,
+  .form-style-1 input[type=time]:focus,
+  .form-style-1 input[type=url]:focus,
+  .form-style-1 input[type=email]:focus,
+  .form-style-1 textarea:focus,
+  .form-style-1 select:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+  }
+  .form-style-1 .field-divided{
+    width: 49%;
+  }
+
+  .form-style-1 .field-long{
+    width: 100%;
+  }
+  .form-style-1 .field-select{
+    width: 100%;
+  }
+  .form-style-1 .field-textarea{
+    height: 100px;
+  }
+  .form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+  }
+  .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+    background: #0bb7e2;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+  }
+  .form-style-1 .required{
+    color:red;
+  }
+
+  .instructions {
+    max-width: 512px;
+  }
+
+  </style>
+<h2> <center>Warning! Spoilers Follow!</center></h2>
+<h2> <center>All Questions Are For Episode 11 Only!</center></h2>
+<div class="instructions">
+  Instructions:
+  <ul>
+    <li> Please enter a probability value (in percent) for each entry. Do not worry about the multiple entry questions adding to 100%, that will be done for you. </li>
+    <li> After the episode, your score will be calculated by comparing your estimate to the average of everyone else's estimate for the outcome which happened.
+      <ul>
+        <li> If your probability estimate was higher, you will get a positive score. </li>
+        <li>If lower, you will get a negative score. </li>
+        <li> <b>Certainty is highly discouraged </b> (i.e. either a 0% or 100% probability) as you will get a very low score for being wrong. This show throws a lot of curveballs, so be mindful! </li>
+      </ul>
+    </li>
+    <li> All single entry questions are worth 1 point, multi-entry questions are worth 2 points </li>
+  </ul>
+</div>
+<div> Thank you so much for playing! </div>
+<form id="fs-frm" name="basic-rsvp-form" accept-charset="utf-8" action="https://formspree.io/f/xbjeegwp" method="post">
+  <ul class="form-style-1">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Full Name</label>
+    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    <label for="email">e-mail (optional)</label>
+    <input type="text" name="email" id="email" placeholder="you@you.com">
+    <h3> How many times will Roy Kent say Fuck? (2 points)</h3>
+      <label for="low_fucks"> 8 or less</label>
+        <input type="number" name="low_fucks" id="low_fucks" min=0.0 step=1 required=""></input>
+      <label for="med_fucks"> 9 to 13</label>
+        <input type="number" name="med_fucks" id="med_fucks" min=0.0 step=1 required=""></input>
+      <label for="high_fucks">14 or more</label>
+        <input type="number" name="high_fucks" id="high_fucks" min=0.0 step=1 required=""></input>
+    <h3> How many goals will Jaime score this week? (2 points)</h3>
+      <label for="jaime_0">0</label>
+        <input type="number" name="jaime_0" id="jaime_0" min=0.0 step=1 required=""></input>
+      <label for="jaime_1">1</label>
+        <input type="number" name="jaime_1" id="jaime_1" min=0.0 step=1 required=""></input>
+      <label for="jaime_2">2</label>
+        <input type="number" name="jaime_2" id="jaime_2" min=0.0 step=1 required=""></input>
+      <label for="jaime_3">3 or more</label>
+        <input type="number" name="jaime_3" id="jaime_3" min=0.0 step=1 required=""></input>
+    <h3> Please enter the probabilities for Richmond's WORST performance this week (2 points)</h3>
+      <label for="ted_lose"> Loss </label>
+        <input type="number" name="ted_lose" id="ted_lose" min=0.0 step=1 required=""></input>
+      <label for="ted_tie">Tie / No Game</label>
+        <input type="number" name="ted_tie" id="ted_tie" min=0.0 step=1 required=""></input>
+      <label for="ted_win">Win</label>
+        <input type="number" name="ted_win" id="ted_win" min=0.0 step=1 required=""></input>
+    <h3> In what place will Rupert's team be at the end of this episode? (2 points)</h3>
+      <label for="rupert_1"> First </label>
+        <input type="number" name="rupert_1" id=rupert_1" min=0.0 step=1 required=""></input>
+      <label for="rupert_2">Second or Unmentioned</label>
+        <input type="number" name="rupert_2" id="rupert_2" min=0.0 step=1 required=""></input>
+      <label for="rupert_3">Third</label>
+        <input type="number" name="rupert_3" id="rupert_3" min=0.0 step=1 required=""></input>
+      <label for="rupert_4">Fourth or Lower</label>
+        <input type="number" name="rupert_4" id="rupert_4" min=0.0 step=1 required=""></input>
+    <h3> What will be Nate and Jade's status be at the end of the episode? (2 points)</h3>
+      <label for="nate_same"> Still together or no mention</label>
+        <input type="number" name="nate_same" id=nate_same" min=0.0 step=1 required=""></input>
+      <label for="nate_dumped"> She ends things.  </label>
+        <input type="number" name="nate_dumped" id="nate_dumped" min=0.0 step=1 required=""></input>
+      <label for="nate_dumps"> Nate ends things. </label>
+        <input type="number" name="nate_dumps" id="nate_dumps" min=0.0 step=1 required=""></input>
+    <h3> What will Michelle Lasso and Dr Asshole's status be at the end of the episode? (2 points)</h3>
+      <label for="dr_same"> Still dating or no mention</label>
+        <input type="number" name="dr_same" id=dr_same" min=0.0 step=1 required=""></input>
+      <label for="dr_dumped"> She ends things.  </label>
+        <input type="number" name="dr_dumped" id="dr_dumped" min=0.0 step=1 required=""></input>
+      <label for="dr_dumps"> Dr ends things. </label>
+        <input type="number" name="dr_dumps" id="dr_dumps" min=0.0 step=1 required=""></input>
+      <label for="dr_engage"> Engaged! </label>
+        <input type="number" name="dr_engage" id="dr_engage" min=0.0 step=1 required=""></input>
+    <h3> Where will Nate be employed by the end of the episode? (2 points)</h3>
+      <label for="nate_unemp"> Still Unemployed / No Mention</label>
+        <input type="number" name="nate_unemp" id=nate_unemp" min=0.0 step=1 required=""></input>
+      <label for="nate_rich"> Back with Richmond </label>
+        <input type="number" name="nate_rich" id="nate_rich" min=0.0 step=1 required=""></input>
+      <label for="nate_other"> With Another Team </label>
+        <input type="number" name="nate_other" id="nate_other" min=0.0 step=1 required=""></input>
+      <label for="nate_passion"> Passion Project </label>
+        <input type="number" name="nate_passion" id="nate_passion" min=0.0 step=1 required=""></input>
+      <label for="nate_jerb"> Just a J-O-B </label>
+        <input type="number" name="nate_jerb" id="nate_jerb" min=0.0 step=1 required=""></input>
+    <h3> What is the probability that Roy joins the Diamond Dogs?</h3>
+      <input type="number" name="roy_dogs" id="roy_dogs" min=0.0 step=1 required=""></input>
+    <h3> What is the probability that Colin will be out publically?</h3>
+      <input type="number" name="colin_out" id="colin_out" min=0.0 step=1 required=""></input>
+    <h3> What is the probability (in percent) that Rebecca gets in contact with Amsterdam man (keep in mind: bald men with beards are objectively the most attractive!)?</h3>
+      <input type="number" name="becca_amsterdam" id="becca_amsterdam" min=0.0 step=1 required=""></input>
+    <h3> What is the probability (in percent) that Nate wrecks his fancy car?</h3>
+      <input type="number" name="nate_car" id="nate_car" min=0.0 step=1 required=""></input>
+    <h3> What is the probability that Beard agrees to a pegging?</h3>
+      <input type="number" name="beard_peg" id="beard_peg" min=0.0 step=1 required=""></input>
+    <input type="hidden" name="_subject" id="email-subject" value="TL Ep 11 Submission!"/>
+    <input name="subject" type="hidden" value="New submission from {{ full-name }}" />
+  </fieldset>
+  <input type="submit" value="Submit">
+  </ul>
+</form>
